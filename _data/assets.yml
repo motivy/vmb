@@ -1,0 +1,111 @@
+- title: Developed America
+  products:
+    - title: Aperture US Equities
+      subtitle: Aperture US Equities invests mainly in equities issued by companies which are domiciled or primarily active in North America
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: NASDAQ 100 Index
+      subtitle: IXNDX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: S&P 500 Index
+      subtitle: SPX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Developed Europe
+  products:
+    - title: Aperture European Equities
+      subtitle: Aperture European Equities is an equity fund which invests in European equity markets, with broad diversification. The focus is currently on investment in the developed equity markets
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: DFA United Kingdom Small Company Port
+      subtitle: DFUKX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: Fidelity® Nordic Fund
+      subtitle: FNORX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Developed Asia/Pacific
+  products:
+    - title: Aperture-Pazifik-Aktien (R)
+      subtitle: Aperture-Pazifik-Aktien (R) investiert in erster Linie in Aktien von Unternehmen, die ihren Sitz oder Tätigkeitsschwerpunkt in den Ländern des pazifischen und asiatischen Raumes haben
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: T. Rowe Price Africa & Middle East Fund
+      subtitle: TRAMX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: Voya Australia Index Port
+      subtitle: IAIIX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Emerging America
+  products:
+    - title: Deutsche Latin America Equity Fund
+      subtitle: SLANX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: BlackRock Latin America Fund
+      subtitle: Corporate Bonds Europa investment-grade
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: JPMorgan Latin America Fund
+      subtitle: Corporate Bonds Europa investment-grade
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Emerging Europe
+  products:
+    - title: Aperture-Osteuropa-Aktien (R)
+      subtitle: Aperture-Osteuropa-Aktien (R) investiert in erster Linie in Aktien von Unternehmen, die ihren Sitz oder Tätigkeitsschwerpunkt in den Schwellenländern Europas (inkl. Russland) haben.
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+    - title: US Global Investors Emerging Europe
+      subtitle: EUROX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Emerging Africa
+  products:
+    - title: Commonwealth Africa Fund
+      subtitle: CAFRX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: Nile Pan Africa Fund
+      subtitle: NAFAX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+
+- title: Emerging Asia/Pacific
+  products:
+    - title: Fidelity® Emerging Asia Fund
+      subtitle: CFSEAX
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green
+    - title: S&P EMERGING ASIA 40
+      subtitle: SPEM40UP
+      detail1: 4.712 %
+      icon: arrow_drop_up
+      color: green

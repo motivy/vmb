@@ -1,0 +1,20 @@
+.welcome-image {
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 1em;
+}
+
+.welcome-question {
+  margin: 6em auto;
+}
+
+.card-image.centered {
+  width: 25%;
+  background-size: cover;
+  background-position: center;
+  min-height: 250px;
+}
+
+input[type="radio"]:checked + label {
+  @extend .black-text;
+}

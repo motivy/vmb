@@ -1,0 +1,367 @@
+---
+layout: default
+---
+
+<div class="navbar-high">
+  <nav class="branded">
+    <div class="nav-wrapper">
+      <div class="container">
+        <span class="navbar-title">Ihre Ziele</span>
+      </div>
+      <span class="brand-logo spaced right">
+        <img src="{{ '/img/brand-logo.png' | relative_url }}" alt="" />
+      </span>
+    </div>
+  </nav>
+</div>
+
+<span>&nbsp;</span>
+
+<div class="container">
+  <div class="row">
+    <div class="col s12 m8">
+
+      <div class="card">
+        <div class="special-input">
+          <input type="text" class="input" id="create" placeholder="Neues Ziel eingeben..." />
+          <i class="material-icons icon">add</i>
+        </div>
+
+        <ul class="tabs tabs-opaque tabs-condensed tabs-fixed-width tabs-no-indicator">
+          {% for target in site.data.targets %}
+            <li class="tab ">
+              <a href="#">
+                <i class="fa fa-{{ target.icon }} fa-lg"></i>
+                <span class="tab-name">{{ target.name }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div id="create-content" class="card-content removable removed">
+          <form action="#">
+            <div class="row">
+              <div class="input-field col m6">
+                <input id="amount" type="text" class="validate">
+                <label for="amount">Betrag</label>
+              </div>
+              <div class="input-field col m6">
+                <input type="date" id="date" class="datepicker">
+                <label for="date">Zieldatum</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="input-field col s12">
+                <textarea id="description" class="materialize-textarea character-counter" length="120"></textarea>
+                <label for="description">Textarea</label>
+              </div>
+            </div>
+
+            <div class="right-align">
+              <a class="waves-effect btn create-button">
+                <i class="material-icons right">file_download</i>
+                Ziel Hinzufügen
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <span>&nbsp;</span>
+
+      <ul class="tabs tabs-fixed-width tabs-opaque">
+        <li class="tab col s3"><a class="active" href="#interesting">Interessant</a></li>
+        <li class="tab col s3"><a href="#current">Aktuell</a></li>
+        <li class="tab col s3"><a href="#discarded">Verworfen</a></li>
+      </ul>
+
+      <span>&nbsp;</span>
+
+      <div id="interesting">
+
+        <div class="center-align flow-text create-placeholder removable">
+          <div class="spacer"></div>
+          Zu jeder bedeutenden Tat gehört eine gewisse Naivität, um nicht vor der Größe des Vorhabens zurückzuschrecken.<br>
+          <br>
+          <div class="right">&ndash; Elsa Rentrop</div>
+        </div>
+
+        <div class="card horizontal hideable hidden create-target">
+          <div class="card-stacked">
+            <div class="card-image">
+              <img src="{{ '/img/haus-1.jpg' | relative_url }}" alt="" />
+            </div>
+
+            <div class="center-align">
+              <div class="circle white card-icon">
+                    <span class="fa-stack fa-3x">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+                    </span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <span class="card-title create-title">Das Haus am See</span>
+
+              <p class="paragraph">
+                <strong>Geplant:</strong> Dezember 2037 <br>
+                <strong>Gesamtkosten:</strong> 1.500.000 € <br>
+              </p>
+
+              <p class="paragraph">
+                <strong>Beschreibung</strong><br>
+                In der Rente gemütliche Sommer am Wörthersee im Eigenheim genießen.
+              </p>
+            </div>
+          </div>
+
+          <div class="card-stacked" style="border-left: 1px solid #ddd">
+            <div class="card-content">
+              <span class="card-title">Unser Vorschlag</span>
+
+              <p class="paragraph">
+                <i>Die folgende Nutzung ihrer bestehenden Ressourcen würden wir vorschlagen:</i>
+              </p>
+
+              <div class="card-content">
+                <div class="valign-wrapper paragraph">
+                  <canvas class="target-chart" width="70" height="70"></canvas>
+                  <div>
+                    <strong>Einmaleinlage</strong><br>
+                    € 300.000 (86%)
+                  </div>
+                </div>
+
+                <div class="valign-wrapper paragraph">
+                  <canvas class="target-chart" width="70" height="70"></canvas>
+                  <div>
+                    <strong>Sparen</strong><br>
+                    € 636 pro Monat (91%)
+                  </div>
+                </div>
+              </div>
+
+              <p class="paragraph">
+                <strong>Schwankung:</strong> ± 1.500 € <br>
+                <strong>Rendite p.a.:</strong> 7,8 % <br>
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a class="block" href="{{ '/invest' | relative_url }}">
+                <i class="material-icons right">play_circle_outline</i>
+                Investment planen
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="current">
+
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-image small">
+              <img src="{{ '/img/target-2.jpg' | relative_url }}" alt="" />
+            </div>
+
+            <div class="center-align">
+              <div class="circle white card-icon">
+                  <span class="fa-stack fa-3x">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-plane fa-stack-1x fa-inverse"></i>
+                  </span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <span class="card-title">USA mit Familie</span>
+
+              <p class="paragraph">
+                <strong>Geplant:</strong> Juli 2018 <br>
+                <strong>Gesamtkosten:</strong> 18.000 € <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="card-stacked" style="border-left: 1px solid #ddd">
+            <div class="card-content">
+              <span class="card-title">Ihr Investment</span>
+              <p><i>gestartet am 27.5.2015</i></p>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt eos esse excepturi.
+              </p>
+
+              <p class="paragraph">
+                <strong>Schwankung:</strong> ± 500 € <br>
+                <strong>Rendite / Jahr:</strong> 2,4 % <br>
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a class="block red-text" href="{{ '/invest' | relative_url }}">
+                <i class="material-icons red circle bottom">check_circle</i>
+                &nbsp; Investment gefährdet
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-image small">
+              <img src="{{ '/img/target-3.jpg' | relative_url }}" alt="" />
+            </div>
+
+            <div class="center-align">
+              <div class="circle white card-icon">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <span class="card-title">Neues Auto</span>
+
+              <p class="paragraph">
+                <strong>Geplant:</strong> Januar 2019 <br>
+                <strong>Gesamtkosten:</strong> 35.000 € <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="card-stacked" style="border-left: 1px solid #ddd">
+            <div class="card-content">
+              <span class="card-title">Ihr Investment</span>
+              <p><i>gestartet am 1.1.2015</i></p>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt eos esse excepturi.
+              </p>
+
+              <p class="paragraph">
+                <strong>Schwankung:</strong> ± 2.700 € <br>
+                <strong>Rendite / Jahr:</strong> 4,9 % <br>
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a class="block orange-text" href="{{ '/invest' | relative_url }}">
+                <i class="material-icons orange circle bottom">check_circle</i>
+                &nbsp; Verbesserung möglich
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card horizontal">
+          <div class="card-stacked">
+            <div class="card-image small">
+              <img src="{{ '/img/haus-1.jpg' | relative_url }}" alt="" />
+            </div>
+
+            <div class="center-align">
+              <div class="circle white card-icon">
+              <span class="fa-stack fa-3x">
+                <i class="fa fa-circle fa-stack-2x"></i>
+                <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+              </span>
+              </div>
+            </div>
+
+            <div class="card-content">
+              <span class="card-title">Das Haus am See</span>
+
+              <p class="paragraph">
+                <strong>Geplant:</strong> Dezember 2037 <br>
+                <strong>Gesamtkosten:</strong> 1.500.000 € <br>
+              </p>
+            </div>
+          </div>
+
+          <div class="card-stacked" style="border-left: 1px solid #ddd">
+            <div class="card-content">
+              <span class="card-title">Ihr Investment</span>
+              <p><i>gestartet am {{ site.time | date: '%d.%m.%Y' }}</i></p>
+
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis deserunt eos esse excepturi.
+              </p>
+
+              <p class="paragraph">
+                <strong>Schwankung:</strong> ± 1.500 € <br>
+                <strong>Rendite p.a.:</strong> 7,8 % <br>
+              </p>
+            </div>
+
+            <div class="card-action">
+              <a class="block green-text" href="{{ '/invest' | relative_url }}">
+                <i class="material-icons green circle bottom">check_circle</i>
+                &nbsp; Ziel ist erreichbar
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="discarded">
+        <div class="center-align flow-text">
+          <div class="spacer"></div>
+          Wer all seine Ziele erreicht hat, hat sie sich als zu niedrig ausgewählt. <br>
+          <br>
+          <div class="right">&ndash; Herbert von Karajan</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col s12 m4">
+
+      <div class="card-panel">
+        <h5 class="card-title">Risikobereitschaft</h5>
+        <p>Mit höherem Risiko steigt der jährliche Ertrag, aber auch der maximal mögliche Verlust.</p>
+        <p class="range-field">
+          <input type="range" id="test5" min="1" max="4" />
+          <span class="left">gering</span>
+          <span class="right">hoch</span>
+        </p>
+
+      </div>
+
+      <div class="card pushpin">
+        <div class="card-content">
+          <div class="valign-wrapper">
+            <img class="valign circle profile-image" src="{{ '/img/profile-1.jpg' | relative_url }}" />
+            <div class="valign">
+              <span class="card-title">Max Mustermann</span>
+              <p class="grey-text">K.Nr. 63056238/0</p>
+            </div>
+          </div>
+
+          <p class="paragraph lead">
+            <strong>Investment-Status: <span class="orange-text">Mittel</span></strong><br>
+            2 Verbesserungen möglich
+          </p>
+
+          <hr>
+
+          {% for group in site.data.groups %}
+            <ul>
+              {% for figure in group %}
+                <li class="clear">
+                  <i class="fa fa-{{ figure.icon }} fa-fw"></i>
+                  {{ figure.title }}: <strong class="right">{{ figure.value }}</strong>
+                </li>
+              {% endfor %}
+            </ul>
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

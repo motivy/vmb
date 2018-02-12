@@ -1,0 +1,6 @@
+title: VMB Produktdemo
+
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock

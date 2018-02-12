@@ -1,0 +1,217 @@
+---
+layout: default
+---
+
+<div class="navbar-high">
+  <nav class="branded">
+    <div class="nav-wrapper">
+      <div class="container-lg">
+        <span class="navbar-title">Ihr Investment</span>
+      </div>
+      <span class="brand-logo spaced right">
+        <img src="{{ '/img/brand-logo.png' | relative_url }}" alt="" />
+      </span>
+    </div>
+  </nav>
+</div>
+
+<div class="white valign-wrapper invest-steps">
+  <div class="valign fill">
+    <ul class="stepper stepper-horizontal">
+      <li class="active">
+        <a href="#">
+          <span class="circle">1</span>
+          <span class="label">Assets konfigurieren</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="circle">2</span>
+          <span class="label">Portfolios vergleichen</span>
+        </a>
+      </li>
+      <li>
+        <a>
+          <span class="circle">3</span>
+          <span class="label">Bestätigung</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <a href="{{ '/compare' | relative_url }}" class="waves-effect btn valign spaced">
+  <i class="material-icons right">send</i>
+  Weiter
+  </a>
+</div>
+
+<span>&nbsp;</span>
+
+<div class="container-lg invest-wrapper hideable">
+
+<div class="row">
+  <div class="col m8 l9">
+    <div class="card-panel">
+      <div class="row asset-tabs">
+        <div class="col m6 asset-tab active">
+          <div class="valign-wrapper">
+            <canvas class="mini-chart valign" width="70" height="70"></canvas>
+            <div class="valign fill">
+              <strong>Einmaleinlage</strong>
+              <input id="invest" type="text" class="validate large-input" value="€ 300.000">
+            </div>
+          </div>
+        </div>
+
+        <div class="col m6 asset-tab">
+          <div class="valign-wrapper">
+            <canvas class="target-chart valign" width="70" height="70"></canvas>
+            <div class="valign fill">
+              <strong>Sparen</strong>
+              <div class="valign-wrapper">
+                <input id="save" type="text" class="validate large-input" value="€ 636">
+                <div class="large-input spaced">
+                  <select>
+                    <option value="1">wöchentlich</option>
+                    <option value="2" selected>monatlich</option>
+                    <option value="3">im Quartal</option>
+                    <option value="4">jährlich</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col m6">
+          <canvas class="assets-chart" width="100" height="100"></canvas>
+        </div>
+        <div class="col m6">
+          <div class="valign-wrapper asset-class">
+            <span class="legend red"></span>
+            <span class="legend-description spaced">Aktien</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets1" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend blue"></span>
+            <span class="legend-description spaced">Anleihen</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets2" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend green"></span>
+            <span class="legend-description spaced">Gold</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets3" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend orange"></span>
+            <span class="legend-description spaced">Rohstoffe</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets4" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend pink lighten-1"></span>
+            <span class="legend-description spaced">Bargeld</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets5" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend amber"></span>
+            <span class="legend-description spaced">Immobilien</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets6" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+          <div class="valign-wrapper asset-class">
+            <span class="legend grey"></span>
+            <span class="legend-description spaced">Alternativ</span>
+            <p class="range-field valign fill">
+              <input type="range" class="asset-slider" id="assets7" min="0" max="100" />
+            </p>
+            <span class="spaced asset-amount">€ 5.000</span>
+            <i class="products-button material-icons black-text waves-effect">more_vert</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="col m4 l3">
+    <h4 class="asset-name">Aktien</h4>
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+    <ul class="browser-default">
+      <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+      <li>Aperiam deleniti distinctio, expedita nemo non perferendis qui ullam. </li>
+      <li>Aspernatur doloremque esse fugiat illum labore maiores modi voluptatum? </li>
+      <li>Exercitationem obcaecati pariatur possimus!</li>
+    </ul>
+    <canvas class="description-chart" width="100" height="60"></canvas>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>
+
+</div>
+
+<div class="row products-wrapper hideable hidden" style="display: none">
+  <div class="col hide-on-small-only m3 l2">
+    <div class="sidenav">
+      <a class="products-back waves-effect btn-flat btn-large">
+        <i class="material-icons left">chevron_left</i>
+        Zurück
+      </a>
+
+      <ul class="section table-of-contents">
+        {% for asset in site.data.assets %}
+        <li><a href="#asset{{ forloop.index }}">{{ asset.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="col s12 m9 l10">
+    <div class="container">
+      {% for asset in site.data.assets %}
+        <h4 id="asset{{ forloop.index }}" class="heading scrollspy">{{ asset.title }}</h4>
+        <ul class="collection z-depth-1">
+          {% for product in asset.products %}
+            <li class="product collection-item avatar waves-effect waves-block">
+              <i class="material-icons circle large">add</i>
+              <p class="right nowrap">{{ product.detail1 }} <i class="material-icons middle {{product.color}}-text">{{ product.icon }}</i> {{ product.detail2 }}</p>
+              <strong class="title">{{ product.title }}</strong>
+              <p>{{ product.subtitle }}</p>
+            </li>
+          {% endfor %}
+
+          <li class="collection-item waves-effect waves-block center-align">
+            <span class="btn-flat transparent">
+              Mehr anzeigen
+            </span>
+          </li>
+        </ul>
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

@@ -1,0 +1,159 @@
+body {
+  background-color: #f2f2f2;
+}
+
+.block {
+  display: block;
+}
+
+.middle {
+  vertical-align: middle;
+}
+
+.bottom {
+  vertical-align: bottom;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.heading {
+  margin-top: 1.3em;
+}
+
+.branded {
+  background-color: $brand-color !important;
+}
+
+.text-branded {
+  color: $brand-color !important;
+}
+
+.hideable {
+  opacity: 1;
+  transition: opacity 0.5s;
+
+  &.hidden {
+    opacity: 0;
+  }
+}
+
+.removable {
+  max-height: 400px;
+  transition: all 500ms;
+  opacity: 1;
+
+  &.removed {
+    max-height: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    opacity: 0;
+    transform: translate(0, -50%);
+    overflow: hidden;
+  }
+}
+
+.section-container {
+  margin-bottom: 2em;
+}
+
+.site-footer {
+  margin-top: 4em;
+  padding: 2em;
+  border-top: 1px solid map-get($grey, 'lighten-1');
+}
+
+.spacer {
+  height: 48px;
+  margin-bottom: 2em;
+}
+
+.card-icon {
+  z-index: 10;
+  position: relative;
+  display: inline-block;
+  margin: -50px 0 -50px 0;
+  top: -15px;
+  text-align: center;
+
+  > * {
+    vertical-align: middle;
+  }
+}
+
+.paragraph {
+  margin-top: 0.66em !important;
+  margin-bottom: 0.66em !important;
+
+  &:first-child {
+    margin-top: 0 !important;
+  }
+}
+
+.spaced {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+input.large-input.large-input,
+.large-input.large-input input {
+  font-size: 1.4em;
+  margin-bottom: 0;
+}
+
+.container-lg {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.navbar-movable {
+  transition: transform 0.5s;
+
+  &.navbar-move {
+    transform: translateY(-100%);
+  }
+}
+
+.navbar-high {
+  .pinned {
+    top: -64px !important;
+    z-index: 100;
+  }
+
+  &, nav {
+    height: 128px;
+  }
+
+  .navbar-title {
+    position: absolute;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding: 0;
+    white-space: nowrap;
+    top: 50%;
+  }
+}
+
+dl {
+  margin: 1em 0;
+
+  dt {
+    margin-top: 0.6em;
+    font-weight: 500;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  dd {
+    margin: 0;
+  }
+}
+
+.lead {
+  font-size: 130%;
+}

@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<div class="navbar-high">
+  <nav class="branded">
+    <div class="nav-wrapper">
+      <div class="container-lg">
+        <span class="navbar-title">Anpassung an Marktchancen</span>
+      </div>
+      <span class="brand-logo spaced right">
+        <img src="{{ '/img/brand-logo.png' | relative_url }}" alt="" />
+      </span>
+    </div>
+  </nav>
+</div>
+
+<div class="white valign-wrapper invest-steps">
+  <div class="valign fill adapt-target">
+    <i class="material-icons large orange-text left">warning</i>
+    <h5><strong>Ihr Ziel: Das Haus am See</strong></h5>
+    <p>Rendite bei 5,7% &ndash; <b>Anpassung wird empfohlen</b></p>
+  </div>
+
+  <a href="{{ '/customer' | relative_url }}" class="btn btn-flat valign spaced waves-effect grey-text">
+    Verwerfen
+  </a>
+
+  <a href="{{ '/customer' | relative_url }}" class="waves-effect btn valign spaced">
+    <i class="material-icons right">lock</i>
+    Jetzt ausführen
+  </a>
+</div>
+
+<span>&nbsp;</span>
+
+<div class="container-lg">
+  <div class="row">
+    <div class="col m6">
+      <div class="card-panel">
+        <h5 style="margin-bottom: 1.5em">Portfolio-Anteil in Emerging Market Aktienpositionen in Q1/2017 zu Lasten von europäischen Aktien erhöhen</h5>
+        <canvas class="research-chart" width="100" height="40"></canvas>
+        <p class="adapt-text">
+          Die globalen Gewinnaussichten sind weiterhin gut. Wir erwarten im ersten Quartal 2017 eine
+          Fortsetzung der positiven Entwicklung auf den Aktienmärkten. Dies gilt insbesondere für
+          die USA. Europäische Aktien haben in diesem Zeitraum aufgrund des erwartenden
+          Gewinnrückgangs aus 2016 schlechtere Perspektiven. Die Emerging Markets werden aufgrund
+          der wieder stärkeren Gewinndynamik eine bessere Kursentwicklung aufweisen. Von der
+          Situation sollten vor allem die Märkte in CEE - speziell Russland - und Emerging
+          Asia/Pacific - speziell Indien - profitieren.
+        </p>
+      </div>
+
+      <div class="card-panel">
+        <h5>
+          <i class="right waves-effect material-icons">file_download</i>
+          Detaillierte Reports
+        </h5>
+        <br>
+        <div class="row">
+          <div class="col s4">
+            <img class="materialboxed" width="100%" src="{{ '/img/report-2.jpg' | relative_url }}">
+          </div>
+          <div class="col s4">
+            <img class="materialboxed" width="100%" src="{{ '/img/report-1.png' | relative_url }}">
+          </div>
+          <div class="col s4">
+            <img class="materialboxed" width="100%" src="{{ '/img/report-3.png' | relative_url }}">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col m6">
+      <div class="card-panel">
+        <h5>
+          <i class="right waves-effect material-icons">edit</i>
+          Unser Anpassungsvorschlag
+        </h5>
+        <br>
+        <canvas class="compare-chart" width="100" height="58"></canvas>
+
+        <p class="adapt-text">
+          Wir empfehlen aus taktischen Gründen die Gewichtungen der Emerging Markets Positionen im
+          Vergleich zur der strategischen Normalgewichtung zu Lasten der Quoten in den europäischen
+          Aktienmärkten zu erhöhen und diese Gewichtung zumindest bis zum Ende des Q1 2017
+          beizubehalten.
+        </p>
+      </div>
+
+      <ul class="collection z-depth-1">
+        <li class="collection-item">
+          <h5>
+            <i class="right waves-effect material-icons">more_vert</i>
+            Transaktionen
+          </h5>
+        </li>
+        {% for tx in site.data.transactions %}
+          <li class="transaction collection-item avatar waves-effect waves-block" data-icon="warning">
+            <i class="material-icons circle large {{ tx.color }}">{{ tx.icon }}</i>
+            <div class="row">
+              <div class="col m8">
+                <strong class="title">{{ tx.title }}</strong>
+                <p class="truncate">{{ tx.subtitle }}</p>
+              </div>
+              <div class="col m4">
+                <p class="right-align nowrap"><i class="material-icons middle">arrow_drop_up</i> {{ tx.detail1 }}</p>
+                <p class="right-align nowrap">{{ tx.detail2 }}</p>
+              </div>
+            </div>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="spacer"></div>
+<div class="spacer"></div>

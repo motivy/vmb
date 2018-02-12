@@ -1,0 +1,39 @@
+.screen-background {
+  background-size: cover;
+  background-position: bottom center;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.screen-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.screen-absolute {
+  position: absolute;
+
+  &.top {
+    top: 2em;
+  }
+
+  &.left {
+    left: 2em;
+  }
+
+  &.right {
+    right: 2em;
+  }
+
+  &.bottom {
+    bottom: 2em;
+  }
+}
+
+.vendor-logo {
+  width: 15%;
+}

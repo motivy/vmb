@@ -1,0 +1,29 @@
+---
+---
+
+$primary-color: #2196F3 !default;
+$secondary-color: #FF9800 !default;
+$accent-color: $secondary-color !default;
+$brand-color: $primary-color !default;
+//$button-raised-color: #333 !default;
+//$radio-fill-color: #333 !default;
+//$input-focus-color: #333 !default;
+//$card-link-color: #333 !default;
+//$card-link-color-light: #999 !default;
+//$dropdown-color: #333 !default;
+
+//$datepicker-weekday-bg: #000 !default;
+//$datepicker-date-bg: #333 !default;
+//$datepicker-selected: $accent-color !default;
+
+@import "materialize";
+@import "overrides";
+@import "stepper";
+@import "general";
+@import "index";
+@import "search";
+@import "results";
+@import "welcome";
+@import "dashboard";
+@import "invest";
+@import "adapt";

@@ -1,0 +1,15 @@
+- name: Max Mustermann
+  address: Musterstraße 17, 1234 Musterstadt
+  birthday: 13.12.1985
+  branch: Wien Landstraße
+  image: profile-1.jpg
+- name: Max Rausch
+  address: Rauschstraße 17, 1234 Musterstadt
+  birthday: 11.02.1972
+  branch: Wien Landstraße
+  image: profile-2.jpg
+- name: Max Ernst
+  address: Ernststraße 17, 1234 Musterstadt
+  birthday: 28.03.1980
+  branch: Wien Landstraße
+  image: profile-3.jpg

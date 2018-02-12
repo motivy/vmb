@@ -1,0 +1,115 @@
+body {
+  font-weight: 300;
+}
+
+strong, b {
+  font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300;
+}
+
+hr {
+  border: 0;
+  background-color: #ccc;
+  height: 1px;
+}
+
+.card-action {
+  font-weight: 500;
+}
+
+.collection .collection-item.avatar {
+  min-height: 0;
+
+  i.circle.large {
+    font-size: 32px;
+  }
+}
+
+.card,
+.card-panel,
+.collection {
+  .row {
+    margin-bottom: 0;
+  }
+}
+
+.card-title {
+  line-height: 28px !important;
+}
+
+.brand-logo img {
+  height: 40px;
+  margin-top: 10px;
+}
+
+.tabs {
+  font-weight: 400;
+
+  &.tabs-opaque {
+    background-color: transparent;
+
+    .tab a,
+    .tab.disabled a,
+    .tab.disabled a:hover {
+      color: map_get($grey, 'base');
+    }
+
+    .tab a:hover,
+    .tab a.active {
+      color: $accent-color;
+    }
+
+    .indicator {
+      background-color: $accent-color;
+    }
+  }
+
+  &.tabs-no-indicator {
+    .indicator {
+      display: none;
+    }
+  }
+
+  &.tabs-condensed .tab a {
+    padding: 0 0 0 0;
+  }
+
+  .tab {
+    .tab-name {
+      display: inline-block;
+      max-width: 0;
+      opacity: 0;
+      transition: all 0.2s;
+      transform: translate(-50%, 0);
+    }
+
+    .active .tab-name {
+      max-width: 100px;
+      opacity: 1;
+      transform: translate(10px, 0);
+    }
+  }
+}
+
+nav .tabs .tab .material-icons {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1ex;
+  line-height: inherit;
+}
+
+.valign-wrapper .valign.fill {
+  flex-grow: 1;
+}
+
+.card.horizontal .card-stacked .card-image {
+  max-width: none;
+}
+
+.card-image.small {
+  max-height: 130px;
+  overflow: hidden;
+}

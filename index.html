@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+<div class="navbar-high">
+  <nav class="branded navbar-movable navbar-move">
+    <div class="nav-wrapper">
+      <div class="container">
+        <span class="navbar-title">Ihre Interessen</span>
+      </div>
+      <span class="brand-logo spaced right">
+        <img src="{{ '/img/brand-logo.png' | relative_url }}" alt="" />
+      </span>
+    </div>
+  </nav>
+</div>
+
+<div class="screen-background screen-fill" style="background-image: url({{ '/img/landing.jpg' | relative_url }});">
+  <img class="vendor-logo screen-absolute bottom left" src="{{ '/img/brand-logo.png' | relative_url }}" alt="">
+</div>
+
+<div class="container search-container">
+  <div class="material-search floating-input">
+    <input type="text" class="input" id="search" placeholder="Zum Start Namen oder Kontonummer eingeben..." />
+    <i class="material-icons icon">search</i>
+  </div>
+</div>
+
+<div class="container results-container hideable hidden">
+  <div class="card create-user waves-effect waves-block branded white-text">
+    <div class="card-content">
+      <i class="material-icons medium left">add_circle</i>
+      <span class="card-title">Neukunde: Max Muster</span>
+      <p>Hier klicken, um einen neuen Kunden zu erfassen.</p>
+    </div>
+  </div>
+
+  <h4 class="heading">Bestandskunden für "Max Muster"</h4>
+
+  <ul class="collection z-depth-1">
+    {% for result in site.data.results %}
+      <li class="collection-item avatar waves-effect waves-block">
+        <a class="black-text" href="{{ '/welcome' | relative_url }}">
+          <img class="circle" src="{{ '/img/' | relative_url }}{{ result.image }}" alt="">
+          <div class="row">
+            <div class="col m6">
+              <strong class="title">{{ result.name }}</strong>
+              <p>{{ result.address }}</p>
+            </div>
+            <div class="col m6">
+              <p><i class="material-icons tiny">cake</i> {{ result.birthday }}</p>
+              <p><i class="material-icons tiny">business</i> {{ result.branch }}</p>
+            </div>
+          </div>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

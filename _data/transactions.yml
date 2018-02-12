@@ -1,0 +1,30 @@
+- icon: arrow_upward
+  color: red
+  title: Aperture US Equities
+  subtitle: Developed America
+  detail1: 2.712 %
+  detail2: 4.517,27 €
+- icon: arrow_upward
+  color: red
+  title: Commonwealth Africa Fund
+  subtitle: Emerging America
+  detail1: 1.482 %
+  detail2: 1.875,95 €
+- icon: arrow_downward
+  color: green
+  title: Aperture-Pazifik
+  subtitle: Developed Asia/Pacific
+  detail1: 4.712 %
+  detail2: 57.917,02 €
+- icon: arrow_downward
+  color: green
+  title: Voya Australia Index Port
+  subtitle: Developed Asia/Pacific
+  detail1: 6.174 %
+  detail2: 93.826,63 €
+- icon: arrow_downward
+  color: green
+  title: Aperture European Equities
+  subtitle: Developed Europe
+  detail1: 4.912 %
+  detail2: 72.932,00 €

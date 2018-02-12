@@ -1,0 +1,75 @@
+.invest-steps {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: bottom .5s;
+
+  box-shadow: 0 -4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+
+  &.move {
+    bottom: -120px;
+  }
+}
+
+.asset-tabs {
+  margin: -20px;
+  margin-bottom: 2em !important;
+  background: #f8f8f8;
+  border-radius: 2px;
+
+  .asset-tab {
+    padding: 1em;
+    border: 1px solid transparent;
+    border-bottom-color: #ddd;
+
+    &.active {
+      border-bottom-color: transparent;
+      border-left-color: #ddd;
+      border-right-color: #ddd;
+      background: white;
+      border-top-left-radius: 2px;
+      border-top-right-radius: 2px;
+
+      &:first-child {
+        border-left-color: transparent;
+      }
+
+      &:last-child {
+        border-right-color: transparent;
+      }
+    }
+  }
+}
+
+.asset-class {
+  padding-left: 1ex;
+
+  &:hover {
+    background: #eeeeee;
+  }
+}
+
+.mini-chart {
+  float: left;
+  margin-right: 1em;
+}
+
+.legend {
+  width: 18px;
+  height: 18px;
+  border-radius: 2px;
+}
+
+.legend-description {
+  text-transform: uppercase;
+  display: inline-block;
+  width: 6em;
+}
+
+.asset-amount {
+  display: inline-block;
+  width: 4em;
+  text-align: right;
+}
